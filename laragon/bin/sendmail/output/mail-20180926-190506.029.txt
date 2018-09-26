@@ -1,0 +1,25 @@
+To: tsuz15@student.monash.edu
+Subject: New WordPress Site
+X-PHP-Originating-Script: 0:class-phpmailer.php
+Date: Wed, 26 Sep 2018 09:05:01 +0000
+From: WordPress <wordpress@localhost>
+Message-ID: <d0c8298923ced8ca26a887bad4cff84f@localhost>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Your new WordPress site has been successfully set up at:
+
+http://localhost:3157/omicron
+
+You can log in to the administrator account with the following information:
+
+Username: admin
+Password: The password you chose during installation.
+Log in here: http://localhost:3157/omicron/wp-login.php
+
+We hope you enjoy your new site. Thanks!
+
+--The WordPress Team
+https://wordpress.org/
+
