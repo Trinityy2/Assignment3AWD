@@ -10,3 +10,7 @@ error: 'Access denied for user 'root'@'localhost' (using password: NO)'
 ERROR: D:\Projects\Assignment3AWD\laragon\bin\mysql\mysql-5.1.72-win32\bin\mysqladmin: connect to server at 'localhost' failed
 error: 'Access denied for user 'root'@'localhost' (using password: NO)'
 
+2018-09-26 19:25:07: Graceful shutdown failed!!! Did you change the root's password? - trying to force it shutdown...
+ERROR: D:\Projects\Assignment3AWD\laragon\bin\mysql\mysql-5.1.72-win32\bin\mysqladmin: connect to server at 'localhost' failed
+error: 'Access denied for user 'root'@'localhost' (using password: NO)'
+
