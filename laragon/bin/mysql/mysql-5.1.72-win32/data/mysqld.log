@@ -612,3 +612,25 @@ InnoDB: of MySQL. Please close it to get rid of this error.
 InnoDB: The error means that another program is using InnoDB's files.
 InnoDB: This might be a backup or antivirus software or another instance
 InnoDB: of MySQL. Please close it to get rid of this error.
+181019 22:39:00 [Note] Plugin 'FEDERATED' is disabled.
+181019 22:39:00  InnoDB: Initializing buffer pool, size = 8.0M
+181019 22:39:00  InnoDB: Completed initialization of buffer pool
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+181019 22:39:00  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+181019 22:39:01  InnoDB: Started; log sequence number 0 44233
+181019 22:49:54 [Note] Plugin 'FEDERATED' is disabled.
+181019 22:49:54  InnoDB: Initializing buffer pool, size = 8.0M
+181019 22:49:54  InnoDB: Completed initialization of buffer pool
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+181019 22:49:54  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+181019 22:49:55  InnoDB: Started; log sequence number 0 44233
