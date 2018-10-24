@@ -634,3 +634,25 @@ InnoDB: Reading tablespace information from the .ibd files...
 InnoDB: Restoring possible half-written data pages from the doublewrite
 InnoDB: buffer...
 181019 22:49:55  InnoDB: Started; log sequence number 0 44233
+181020 20:05:31 [Note] Plugin 'FEDERATED' is disabled.
+181020 20:05:31  InnoDB: Initializing buffer pool, size = 8.0M
+181020 20:05:31  InnoDB: Completed initialization of buffer pool
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+181020 20:05:31  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+181020 20:05:32  InnoDB: Started; log sequence number 0 44233
+181024 20:03:41 [Note] Plugin 'FEDERATED' is disabled.
+181024 20:03:41  InnoDB: Initializing buffer pool, size = 8.0M
+181024 20:03:41  InnoDB: Completed initialization of buffer pool
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+181024 20:03:41  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+181024 20:03:41  InnoDB: Started; log sequence number 0 44233
