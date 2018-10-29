@@ -1,1 +1,2 @@
 [26-Sep-2018 09:02:58 UTC] WordPress database error Unknown column 'wp_' in 'field list' for query SELECT wp_
+[29-Oct-2018 10:27:12 UTC] PHP Parse error:  syntax error, unexpected '<' in D:\Projects\Assignment3AWD\laragon\www\Omicron\wp-content\themes\twentyseventeen\single-event.php on line 15

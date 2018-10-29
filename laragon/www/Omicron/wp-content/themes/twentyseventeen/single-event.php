@@ -1,27 +1,38 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+<head>
+  <style>
+    <?php include "event.css"; ?>
+  </style>
+</head>
+<body>
 
-get_header(); ?>
+  <div class="wrap">
 
-<div class="wrap">
+    <?php while ( have_posts() ) : the_post(); ?>
+      <h1> <?php echo wp_title(); ?> </h1>
 
-  <?php while ( have_posts() ) : the_post(); ?>
-    <h1> <?php echo wp_title(); ?> </h1>
+      <div class="eventBox">
+        <p class="video"> Video here </p>
+        <p class="quickInfo"> Additional Information here </p>
+        <p class="restrictions"> Restrictions here </p>
+        <button class="purchase"> Buy Now </button>
+        <p class="description"> This is a description with a lot of text: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+        <p class="dateTime"> Date & Time </p>
+        <p class="location"> Location </p>
+      </div>
 
-    <div class="EventHeader">
-      
-    </div>
+      <div class="share">
+        Sharing is Caring
+      </div>
 
-  <?php endwhile; ?>
-</div><!-- .wrap -->
+      <div class="more">
+        <h2> Check out some other events! </h2>
+        <div class="moreItem">
+          <p class="moreImage"> Image here </p>
+          <h3 class="itemHeader"> </h3>
+        </div>
+      </div>
 
-<?php get_footer();
+    <?php endwhile; ?>
+  </div><!-- .wrap -->
+
+</body>
