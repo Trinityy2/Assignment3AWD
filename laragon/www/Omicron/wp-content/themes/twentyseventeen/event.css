@@ -82,13 +82,49 @@
 	padding: 1%;
 	height: 35vh;
 	grid-template-columns: 40% auto 10%;
-	grid-template-rows: auto auto auto auto;
+	grid-template-rows: 10% auto auto auto;
 	background-color: #ef5450;
 }
 
 .moreImage{
 	grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 5;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 2;
+	background-color: #ffffff;
+}
+
+.moreType{
+	grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.moreBuyNow{
+	grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.moreTitle{
+	grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.moreDescription{
+	grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.moreRestrictions{
+	grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }

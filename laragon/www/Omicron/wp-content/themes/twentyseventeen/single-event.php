@@ -28,7 +28,11 @@
         <h2> Check out some other events! </h2>
         <div class="moreItem">
           <p class="moreImage"> Image here </p>
-          <h3 class="itemHeader"> </h3>
+          <p class="moreType"> film </p>
+          <button class="moreBuyNow"> Buy Now! </button>
+          <h3 class="moreTitle"> The name of the Event </h3>
+          <p class="moreDescription"> The description of the event and stuff goes in here </p>
+          <p class="moreRestrictions"> The restrictions of the event here </p>
         </div>
       </div>
 
