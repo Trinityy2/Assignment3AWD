@@ -3,6 +3,45 @@
 		<?php include "single.css"; ?>
 	</style>
 </head>
+
+<?php
+function getPrevNext(){
+	$postlist = get_posts('sort_column=menu_order&sort_order=asc');
+	$posts = array();
+	foreach ($postlist as $post) {
+	   $posts[] += $post->ID;
+	}
+
+	$current = array_search(get_the_ID(), $posts);
+	$prevID = $posts[$current-1];
+	$nextID = $posts[$current+1];
+
+	if (!empty($prevID)) {
+		echo '<a href="';
+		echo get_permalink($prevID);
+		echo '"';
+		echo 'title="';
+		echo get_the_title($prevID);
+		echo'"><< Previous</a>';
+	} else{
+		echo '<< Previous';
+	}
+
+	echo " || ";
+
+	if (!empty($nextID)) {
+		echo '<a href="';
+		echo get_permalink($nextID);
+		echo '"';
+		echo 'title="';
+		echo get_the_title($nextID);
+		echo'">Next >></a>';
+	}else{
+		echo 'Next >>';
+	}
+}
+?>
+
 <body>
 
 	<div class="wrap">
@@ -13,20 +52,26 @@
 		<div class="title">
 			<h1><?= wp_title() ?></h1>
 		</div>
-		<p><?= the_content() ?> </p>
-		<?php
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
 
-			the_post_navigation( array(
-				'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'twentyseventeen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous', 'twentyseventeen' ) . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '</span>%title</span>',
-				'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'twentyseventeen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Next', 'twentyseventeen' ) . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ) . '</span></span>',
-			) );
+		<div class="content">
+			<p><?= the_content() ?> </p>
+		</div>
 
-		endwhile; // End of the loop.
-		?>
+		<div class="comments">
+			<?php
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+
+			?>
+		</div>
+
+		<div class="navigation">
+			<p><?php getPrevNext(); ?>
+		</div>
+
+		<?php endwhile; // End of the loop. ?>
 
 	</div><!-- .wrap -->
 
