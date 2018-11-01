@@ -153,6 +153,22 @@ header{
 
 .shareEmail{
 	display: grid;
+	grid-template-rows: auto, auto;
+	padding: 15px;
+}
+
+.shareEmail h2{
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+#subscribe{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	margin: 5%
+	width: 90%;
+	height: 2em;
+	resize: none;
 }
 
 .more{

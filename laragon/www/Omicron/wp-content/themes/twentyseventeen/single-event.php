@@ -51,6 +51,8 @@
           <img id="mail" src="<?php echo get_template_directory_uri() . '/assets/images/Mail.svg'; ?>" alt="Mail">
         </section>
         <section class="shareEmail">
+          <h2> Subscribe </h2>
+          <textarea id="subscribe">E-mail</textarea>
         </section>
       </div>
 
