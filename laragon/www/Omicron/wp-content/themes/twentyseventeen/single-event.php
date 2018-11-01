@@ -4,6 +4,9 @@
   </style>
 </head>
 <body>
+  <header>
+
+  </header>
 
   <div class="wrap">
 
@@ -11,17 +14,34 @@
       <h1> <?php echo wp_title(); ?> </h1>
 
       <div class="eventBox">
-        <p class="video"> Video here </p>
-        <p class="quickInfo"> Additional Information here </p>
-        <p class="restrictions"> Restrictions here </p>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/4S3PD9k8dmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <p class="quickInfo">
+          <?php echo get_field("director"); ?> ||
+          <?php echo get_field("year_of_release"); ?> ||
+          <?php echo get_field("duration"); ?> min ||
+          <?php echo get_field("available_subtitles"); ?> ||
+          <?php echo get_field("genre"); ?>
+        </p>
+        <p class="restrictions">
+          <?php echo get_field("restrictions"); ?>
+        </p>
         <button class="purchase"> Buy Now </button>
-        <p class="description"> This is a description with a lot of text: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-        <p class="dateTime"> Date & Time </p>
+        <section class="description">
+          <?php the_content(); ?>
+        </section>
+        <p class="dateTime">
+          <b>Date and Time: </b> <br>
+          <?php $date = get_field('date', false, false);
+          $date = new DateTime($date);
+          echo $date->format('F d Y');
+           ?>, <?php echo get_field("time"); ?>
+        </p>
         <p class="location"> Location </p>
       </div>
 
       <div class="share">
         Sharing is Caring
+        <!-- Share items here -->
       </div>
 
       <div class="more">

@@ -1,0 +1,1 @@
+token|i:312378;pwds|a:1:{s:6:"server";a:1:{s:0:"";a:2:{s:4:"root";N;s:5:"admin";N;}}}db|a:1:{s:6:"server";a:1:{s:0:"";a:2:{s:4:"root";a:1:{s:0:"";b:1;}s:5:"admin";a:1:{s:0:"";b:1;}}}}dbs|a:1:{s:6:"server";a:1:{s:0:"";a:3:{s:0:"";N;s:5:"admin";N;s:4:"root";a:4:{i:0;s:18:"information_schema";i:1;s:5:"mysql";i:2;s:7:"omicron";i:3;s:4:"test";}}}}

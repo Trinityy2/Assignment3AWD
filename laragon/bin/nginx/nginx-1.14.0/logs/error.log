@@ -10,3 +10,4 @@
 2018/10/24 21:20:36 [crit] 17748#24736: *503 GetFileAttributesEx() "D:/Projects/Assignment3AWD/laragon/www/omicron/index.php/" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET /omicron/index.php/ HTTP/1.1", host: "localhost:3157"
 2018/10/24 21:20:36 [crit] 17748#24736: *503 GetFileAttributesEx() "D:/Projects/Assignment3AWD/laragon/www/omicron/index.php/" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET /omicron/index.php/ HTTP/1.1", host: "localhost:3157"
 2018/10/24 22:49:13 [notice] 21584#18484: signal process started
+2018/10/30 01:26:12 [notice] 19244#1660: signal process started

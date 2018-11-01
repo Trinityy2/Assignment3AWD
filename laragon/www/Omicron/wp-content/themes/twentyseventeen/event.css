@@ -1,7 +1,17 @@
+header{
+
+}
+
+.wrap h1{
+	margin-left: 8%;
+}
+
 .eventBox{
+	border-radius: 10px;
 	display: grid;
 	margin-left: 8%;
   margin-right: 8%;
+	padding: 1%;
 	width: auto;
 	height: auto;
 	grid-template-columns: 55% auto;
@@ -14,6 +24,10 @@
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 55%;
+	padding-right: 1%;
 }
 
 .quickInfo{
@@ -21,6 +35,7 @@
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
+	padding-left: 2%;
 }
 
 .restrictions{
@@ -28,6 +43,7 @@
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
+	padding-left: 2%;
 }
 
 .purchase{
@@ -37,7 +53,7 @@
   grid-column-end: 3;
   width: auto;
   height: 30px;
-  margin: 1%;
+	margin-top: 2%;
 }
 
 .description{
@@ -52,6 +68,7 @@
   grid-row-end: 5;
   grid-column-start: 2;
   grid-column-end: 3;
+	padding-left: 2%;
 }
 
 .location{
@@ -59,6 +76,7 @@
   grid-row-end: 6;
   grid-column-start: 2;
   grid-column-end: 3;
+	padding-left: 2%;
 }
 
 .share{
@@ -69,6 +87,10 @@
   width: auto;
   height: 60px;
   background-color: #ef5450;
+	margin-top: 10px;
+	margin-left: 8%;
+	margin-right: 8%;
+	border-radius: 10px;
 }
 
 .more{
@@ -84,6 +106,7 @@
 	grid-template-columns: 40% auto 10%;
 	grid-template-rows: 10% auto auto auto;
 	background-color: #ef5450;
+	border-radius: 10px;
 }
 
 .moreImage{
